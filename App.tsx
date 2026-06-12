@@ -1,10 +1,19 @@
-import { View, Text } from 'react-native';
-import './global.css';
+import { View } from 'react-native';
+import Login from './src/screens/Login';
+import { colors } from './src/theme/colors';
+import { StyleSheet } from 'nativewind';
 
 export default function App() {
   return (
-    <View className="bg-violet-900 flex-1 items-center justify-center">
-      <Text className="text-gray-300 text-3xl font-bold underline">Hello</Text>
+    <View style={styles.container}>
+      <Login />
     </View>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: colors.background,
+  },
+});
