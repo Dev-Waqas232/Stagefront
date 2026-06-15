@@ -1,7 +1,7 @@
-import { View } from 'react-native';
+import React from 'react';
+import { View, StyleSheet } from 'react-native';
 import Login from './src/screens/Login';
 import { colors } from './src/theme/colors';
-import { StyleSheet } from 'nativewind';
 
 export default function App() {
   return (
